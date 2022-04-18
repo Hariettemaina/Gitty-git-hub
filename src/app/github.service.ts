@@ -18,4 +18,17 @@ export class GithubService {
     console.log('Github Service Ready...');
     this.username = 'Hariettemaina';
    }
+
+   getUsers(){
+     return this._http.get(`https://api.github.com/users/${this.username}`)
+     .forEach(result => result);
+   }
+
+   getRepository(){
+     return this._http.get(`https://api.github.com/users/${this.username}/repos`)
+     .forEach(result => result);
+   }
+   updateUser(username: string){
+     this.username = username;
+   }
 }

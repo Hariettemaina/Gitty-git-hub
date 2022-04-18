@@ -19,5 +19,17 @@ token: string = environment.accessToken;
       )
       .toPromise();
     }
-  
+
+    getUserRepoData(username: string){
+      return this.http
+      .get<Repository[]>(
+        ` https://api.github.com/users/${username}/repos?order=created&sort=asc?access_token=${this.token} `
+      )
+      .toPromise();
+    }
+    getRepoData(searchterm: string) {
+      return this.http
+        .get<Repository[]>(`https://api.github.com/search/repositories?q=${searchterm}`)
+        .toPromise();
+    }
 }

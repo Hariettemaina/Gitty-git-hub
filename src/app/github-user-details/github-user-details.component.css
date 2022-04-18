@@ -1,0 +1,268 @@
+.wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 transparent;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 20px;
+    border: transparent;
+  }
+  
+  form {
+    width: 500px;
+    margin: 10px auto;
+  }
+  
+  input[type="text"],
+  input[type="text"]:focus,
+  input[type="email"],
+  input[type="email"]:focus,
+  textarea[type="text"],
+  textarea[type="text"]:focus {
+    background: transparent;
+    border: rgb(1, 1, 1);
+    border-bottom: 4px solid #ff0000;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    padding-bottom: 10px;
+  }
+  
+  form input {
+    width: 80%;
+    padding-left: 20px;
+  }
+  
+  form .searchBtn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+  
+  .user-details-wrapper {
+    margin: 30px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .user-details-wrapper .avatar {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0px 20px;
+  }
+  
+  .user_detail {
+    padding-top: 20px;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+  }
+  
+  .user_name {
+    color: white !important;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .user_repoData {
+    width: 250px;
+  }
+  
+  .user_bio {
+    margin: 15px 0px;
+    color: white;
+    line-height: 19px;
+    font-size: 18px;
+  }
+  
+  .user_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    margin: 10px;
+  }
+  .info img {
+    height: 25px;
+    margin: 10px;
+  }
+  
+  .info span {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .user_repoData {
+    display: flex;
+    flex-direction: column;
+    padding-top: 19px;
+    align-items: center;
+  }
+  
+  .user_repoData h4 {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 26px;
+  }
+  .repoData img {
+    height: 45px;
+    margin: 10px;
+  }
+  
+  .repoData span {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .error {
+    color: #ff0000;
+  }
+  
+  /* repo*/
+  .repo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .repo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .repo-container {
+    margin: 15px 10px 15px 0px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    width: 350px;
+  }
+  
+  .repo_name {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  .repo_description {
+    font-size: 17px;
+    padding-bottom: 5px;
+    height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  .repo_info {
+    margin: 10px 0px;
+    display: flex;
+  }
+  
+  .repo_info .info {
+    margin-right: 20px;
+  }
+  
+  .repo_info .info img {
+    margin-right: 6px;
+    height: 20px;
+  }
+  
+  .repo_info .info span {
+    font-size: 14px;
+  }
+  
+  .repo_date-info {
+    font-size: 17px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .searchRepoBtn {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .searchRepoBtn:hover {
+    background-color: red;
+    color: #fff;
+  }
+  .error {
+    color: red;
+  }
+  @media screen and (max-width: 1090px) {
+    .user-details-wrapper {
+      margin: 70px 10px;
+      gap: 10px;
+    }
+  
+    .repo-wrapper {
+      justify-content: center;
+      margin-left: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .user-details-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 70px 10px;
+    }
+    .repo-wrapper {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .user-details-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+    form {
+      width: 100%;
+    }
+    form input {
+      width: 300px;
+    }
+    .searchBtn {
+      margin-top: 5px;
+    }
+    .repo-wrapper {
+      justify-content: center;
+      margin-left: 50px;
+    }
+  }

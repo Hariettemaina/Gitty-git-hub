@@ -9,6 +9,7 @@ import { GithubUserDetailsComponent } from './github-user-details/github-user-de
 import { GithubuserRepoDetailsComponent } from './githubuser-repo-details/githubuser-repo-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component'
+import { GithubDataService } from './github-data.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { HomepageComponent } from './homepage/homepage.component'
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GithubDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

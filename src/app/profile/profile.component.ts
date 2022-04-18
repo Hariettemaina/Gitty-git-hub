@@ -12,7 +12,12 @@ export class ProfileComponent implements OnInit {
  username!: string;
 
  
-  constructor() { }
+  constructor(private _githubService: GithubService) {
+    this._githubService.getUsers().((users: any) => [
+      console.log(users),
+      this.users,
+    ]);
+   }
 
   ngOnInit(): void {
   }

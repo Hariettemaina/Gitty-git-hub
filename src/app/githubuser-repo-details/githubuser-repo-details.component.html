@@ -1,1 +1,58 @@
-<p>githubuser-repo-details works!</p>
+<div class="container">
+
+
+    <div class="main-wrapper">
+        <div class="mt-5">
+            <form class="text-center" #searchForm="ngForm" (ngSubmit)="searchForm.form.valid && getUserData()">
+                <div class="input-group">
+                    <input type="text" class="" placeholder="Search Repositories" [(ngModel)]="searchTerm"
+                        name="searchTerm" />
+
+                    <button class="btn searchBtn">Search</button>
+                </div>
+                <span class="error" *ngIf="isError">Please enter repository name </span>
+                <span class="error" *ngIf="isDataError">Can not find repository name
+                </span>
+            </form>
+        </div>
+
+        <div class="wrapper" *ngIf="!isLoading">
+            <div class="repo_wrapper text-center">
+                <div class="repo-container" *ngFor="let repo of repoData" appHighlightHover>
+                    <div class="repo_name">{{ repo.name }}</div>
+                    <div class="repo_description">
+                        <p>
+                            {{ repo.description }}
+                        </p>
+                    </div>
+
+                    <div class="repo_info">
+                        <div class="info">
+                            <img src="../../../assets/img/star.svg" alt="" />
+                            <span>{{ repo.watchers_count }}</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../assets/img/branch.svg" alt="" />
+                            <span>{{ repo.forks }}</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../assets/img/code.svg" alt="" />
+                            <span>{{ repo.language }}</span>
+                        </div>
+                    </div>
+                    <div class="repo_owner">
+                        <h6>Owner:</h6>
+                        <span class="user-info">
+                            <a href="{{ repo.owner.html_url }}"> {{ repo.owner.login }}</a>
+                        </span>
+                    </div>
+                    <div class="repo_date-info">
+                        <div class="date">{{ repo.created_at | dateCount }}</div>
+                        <a class="btn searchRepoBtn" href="{{ repo.html_url }}">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

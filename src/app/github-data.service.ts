@@ -10,8 +10,14 @@ export class GithubDataService {
 token: string = environment.accessToken;
 
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {}
 
-    getUserData
-  }
+    getUserData(username: string) {
+      return this.http
+      .get<Users>(
+        `https://api.github.com/users/${username}`
+      )
+      .toPromise();
+    }
+  
 }

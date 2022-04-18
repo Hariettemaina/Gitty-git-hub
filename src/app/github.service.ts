@@ -11,6 +11,11 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class GithubService {
+  username: string;
 
-  constructor() { }
+
+  constructor(private _http: HttpClient) {
+    console.log('Github Service Ready...');
+    this.username = 'Hariettemaina';
+   }
 }

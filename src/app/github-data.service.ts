@@ -7,7 +7,9 @@ import { Repository } from './repository';
   providedIn: 'root'
 })
 export class GithubDataService {
-token: string = environment.accessToken;
+  token: string = environment.accessToken;
+
+  // token: string = environment.accessToken;
 
 
   constructor(private http: HttpClient) {}
@@ -15,7 +17,8 @@ token: string = environment.accessToken;
     getUserData(username: string) {
       return this.http
       .get<Users>(
-        `https://api.github.com/user/${username}`
+        
+       `https://api.github.com/users/${username}`
       )
       .toPromise();
     }
@@ -23,7 +26,8 @@ token: string = environment.accessToken;
     getUserRepoData(username: string){
       return this.http
       .get<Repository[]>(
-        ` https://api.github.com/user/${username}/repos?order=created&sort=asc?access_token=${this.token} `
+        
+         ` https://api.github.com/users/${username}/repos?order=created&sort=asc?access_token=${this.token} `
       )
       .toPromise();
     }

@@ -1,7 +1,4 @@
 <div class="container-fluid wrapper">
-    <div class="logo">
-        <img src="/home/carolmaina/Documents/MORINGA PROJECTS/Gitty-git-hub/src/app/img/logov.svg" alt="logo" />
-    </div>
     <form #searchForm="ngForm" (ngSubmit)="searchForm.form.valid && getUserData()" *ngIf="!isLoading">
         <input type="text" class="searchInput" placeholder="Enter user name" [(ngModel)]="searchTerm"
             name="searchTerm" />

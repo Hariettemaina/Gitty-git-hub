@@ -7,6 +7,11 @@ import { Repository } from './repository';
   providedIn: 'root'
 })
 export class GithubDataService {
+token: string = environment.accessToken;
 
-  constructor() { }
+
+  constructor(private http: HttpClient) { 
+
+    getUserData
+  }
 }

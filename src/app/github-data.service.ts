@@ -15,7 +15,7 @@ token: string = environment.accessToken;
     getUserData(username: string) {
       return this.http
       .get<Users>(
-        `https://api.github.com/users/${username}`
+        `https://api.github.com/user/${username}`
       )
       .toPromise();
     }
@@ -23,7 +23,7 @@ token: string = environment.accessToken;
     getUserRepoData(username: string){
       return this.http
       .get<Repository[]>(
-        ` https://api.github.com/users/${username}/repos?order=created&sort=asc?access_token=${this.token} `
+        ` https://api.github.com/user/${username}/repos?order=created&sort=asc?access_token=${this.token} `
       )
       .toPromise();
     }

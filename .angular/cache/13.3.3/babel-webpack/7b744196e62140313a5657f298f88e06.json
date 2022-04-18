@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  accessToken: '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'\n};","map":null,"metadata":{},"sourceType":"module"}

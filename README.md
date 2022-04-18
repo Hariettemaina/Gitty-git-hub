@@ -1,12 +1,26 @@
-# GittyGitHub
+### GittyGitHub
+# Description
+A simple application that allows a user to search for github users and get their details or search for a users and get their github repositories, made using angular and github api.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+This project was generated with [Angular CLI] version 13.3.1.
 
-## Development server
+## Author
+Hariette Maina
 
+## Installation
+
+Firstly, in order to run this application in your local machine, you need to have installed npm and Angular.
+Clone the application using https://github.com/Hariettemaina/Gitty-git-hub
+Then run npm install to install application dependacies locally
+Run ng serve -o to start application
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Technologies used
+HTML
+CSS
+Bootstrap
+TypeScript
+Angular
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
@@ -25,3 +39,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Contact
+For any further questions, contributions or feedback, get in touch with me through the following contacts;
+Email: hariettemaina@gmail.com
+
+# Licence
+MIT LICENCE Copyright(c){2022}

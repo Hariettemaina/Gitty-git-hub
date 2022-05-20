@@ -16,7 +16,9 @@ export class GithubuserRepoDetailsComponent implements OnInit {
   isLoading: boolean = false;
   constructor(private dataService: GithubDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.searchTerm = 'Hariettemaina'
+  }
 
   getUserData() {
     this.isLoading = true;

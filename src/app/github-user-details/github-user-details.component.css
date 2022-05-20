@@ -8,7 +8,7 @@
   
   * {
     scrollbar-width: thin;
-    scrollbar-color: #2b2929 transparent;
+    scrollbar-color: #4e1717 transparent;
   }
   
   *::-webkit-scrollbar {
@@ -18,7 +18,7 @@
     background: transparent;
   }
   *::-webkit-scrollbar-thumb {
-    background: #001aff;
+    background: #107ca3;
     border-radius: 20px;
     border: transparent;
   }
@@ -35,9 +35,9 @@
   textarea[type="text"],
   textarea[type="text"]:focus {
     background: transparent;
-    border: rgb(1, 1, 1);
+    border: rgb(57, 3, 3);
     border-bottom: 4px solid #420101;
-    color: rgb(20, 18, 18);
+    color: rgb(63, 4, 4);
     font-size: 20px;
     outline: none;
     padding-bottom: 10px;
@@ -49,8 +49,8 @@
   }
   
   form .searchBtn {
-    background-color: #4c00ff;
-    color: rgb(61, 75, 180);
+    background-color: #4704e4;
+    color: rgb(18, 19, 22);
     padding: 10px;
     font-size: 15px;
     font-weight: 600;
@@ -80,7 +80,7 @@
   }
   
   .user_name {
-    color: rgb(12, 11, 11) !important;
+    color: rgb(251, 246, 246) !important;
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
@@ -92,7 +92,7 @@
   
   .user_bio {
     margin: 15px 0px;
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     line-height: 19px;
     font-size: 18px;
   }
@@ -111,7 +111,7 @@
   }
   
   .info span {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   
@@ -123,7 +123,7 @@
   }
   
   .user_repoData h4 {
-    color: rgb(8, 1, 1);
+    color: rgb(90, 5, 5);
     font-size: 23px;
     font-weight: 600;
     padding-bottom: 26px;
@@ -134,7 +134,7 @@
   }
   
   .repoData span {
-    color: rgb(20, 18, 18);
+    color: rgb(118, 10, 10);
     font-size: 18px;
   }
   
@@ -162,7 +162,7 @@
     background-color: rgb(27, 27, 27);
     border-radius: 5px;
     padding: 15px;
-    color: rgb(71, 61, 61);
+    color: rgb(101, 24, 215);
     width: 350px;
   }
   
@@ -216,7 +216,7 @@
   
   .searchRepoBtn:hover {
     background-color: rgb(0, 255, 221);
-    color: rgb(7, 18, 22);
+    color: rgb(11, 7, 22);
   }
   .error {
     color: rgb(0, 255, 234);

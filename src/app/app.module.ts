@@ -10,6 +10,7 @@ import { GithubuserRepoDetailsComponent } from './githubuser-repo-details/github
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component'
 import { GithubDataService } from './github-data.service';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { GithubDataService } from './github-data.service';
     GithubUserDetailsComponent,
     GithubuserRepoDetailsComponent,
     HomepageComponent,
+    NavbarComponent,
     ],
   imports: [
     BrowserModule,

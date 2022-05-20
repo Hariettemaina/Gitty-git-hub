@@ -1,4 +1,8 @@
 <div class="container-fluid wrapper">
+
+<div class="container-fluid">
+    <p style ="font-size: 30px;">Search for your github page or someone you know.</p>
+</div>
     <form #searchForm="ngForm" (ngSubmit)="searchForm.form.valid && getUserData()" *ngIf="!isLoading">
         <input type="text" class="searchInput" placeholder="Enter user name" [(ngModel)]="searchTerm"
             name="searchTerm" />
@@ -8,7 +12,3 @@
     </form>
 </div>
 
-
-<div class="container-fluid">
-    <p>Search for your github page or someone you know.</p>
-</div>
